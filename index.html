@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨磊的每日一看</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .date-time {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .category {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .category h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+        
+        .link-item:hover {
+            background: #eef5ff;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .link-item img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .notes {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .notes h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        
+        .add-link-form {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f7ff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 8px 15px;
+            background: #4a89dc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #3b7ddd;
+        }
+        
+        .youtube-section {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #ff0000;
+        }
+        
+        .task-manager {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .task-manager h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .task-input {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .task-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .task-input button {
+            padding: 10px 15px;
+            background: #4a89dc;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .task-controls {
+            margin-top: 15px;
+            text-align: right;
+        }
+
+        .task-controls button {
+            padding: 8px 12px;
+            background: #f0f0f0;
+            color: #666;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .task-controls button:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>杨磊的信息源</h1>
+            <div class="date-time" id="datetime"></div>
+        </header>
+        
+        <div class="category">
+            <h2>常用网站</h2>
+            <div class="links" id="common-sites">
+                
+                <div class="link-item">
+                    <img src="https://you.com/favicon.ico" alt="You.com" onerror="this.src='https://www.google.com/s2/favicons?domain=you.com'">
+                    <a href="https://you.com" target="_blank">You.com</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://claude.ai/favicon.ico" alt="Claude" onerror="this.src='https://www.google.com/s2/favicons?domain=claude.ai'">
+                    <a href="https://claude.ai/" target="_blank">Claude</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://chat.openai.com/favicon.ico" alt="ChatGPT" onerror="this.src='https://www.google.com/s2/favicons?domain=chat.openai.com'">
+                    <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+                </div>
+                <!-- 可以继续添加更多链接 -->
+            </div>
+        </div>
+        
+        <div class="youtube-section">
+            <h2>每日youtube和x</h2>
+            <div class="links" id="youtube-links">
+                <div class="link-item">
+                    <img src="https://www.youtube.com/favicon.ico" alt="YouTube">
+                    <a href="https://www.youtube.com/@ST_English" target="_blank">ST English</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://www.youtube.com/favicon.ico" alt="YouTube">
+                    <a href="https://www.youtube.com/@blockchaindailynews" target="_blank">区块链日报</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://www.youtube.com/favicon.ico" alt="YouTube">
+                    <a href="https://www.youtube.com/@TheIELTSListeningTest" target="_blank">The IELTS Listening Test</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://x.com/favicon.ico" alt="X" onerror="this.src='https://www.google.com/s2/favicons?domain=x.com'">
+                    <a href="https://x.com/yngli1383215795/likes" target="_blank">我的X喜欢列表</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>学习资源</h2>
+            <div class="links" id="learning-resources">
+                <div class="link-item">
+                    <img src="https://weread.qq.com/favicon.ico" alt="微信读书" onerror="this.src='https://www.google.com/s2/favicons?domain=weread.qq.com'">
+                    <a href="https://weread.qq.com/" target="_blank">微信读书</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://www.ted.com/favicon.ico" alt="TED" onerror="this.src='https://www.google.com/s2/favicons?domain=ted.com'">
+                    <a href="https://www.ted.com/talks/" target="_blank">TED</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2>工作相关</h2>
+            <div class="links" id="work-related">
+                <div class="link-item">
+                    <img src="https://github.com/favicon.ico" alt="GitHub" onerror="this.src='https://www.google.com/s2/favicons?domain=github.com'">
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://www.gitbook.com/favicon.ico" alt="GitBook" onerror="this.src='https://www.google.com/s2/favicons?domain=gitbook.com'">
+                    <a href="https://www.gitbook.com/" target="_blank">GitBook</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="task-manager">
+            <h2>任务管理</h2>
+            <div class="task-input">
+                <input type="text" id="new-task" placeholder="添加新任务...">
+                <button onclick="addTask()">添加</button>
+            </div>
+            <ul id="tasks-list" style="list-style-type: none; padding: 0;"></ul>
+            <div class="task-controls">
+                <button onclick="clearCompletedTasks()">清除已完成任务</button>
+            </div>
+        </div>
+        
+        <div class="add-link-form">
+        
+            
+            
+        </div>
+    </div>
+
+    <script>
+        // 显示当前日期时间
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('zh-CN', options);
+        }
+        
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+        
+        // 保存待办事项到本地存储
+        document.getElementById('daily-notes').addEventListener('input', function() {
+            localStorage.setItem('dailyNotes', this.value);
+        });
+        
+        // 加载保存的待办事项
+        window.addEventListener('load', function() {
+            const savedNotes = localStorage.getItem('dailyNotes');
+            if (savedNotes) {
+                document.getElementById('daily-notes').value = savedNotes;
+            }
+        });
+        
+        // 添加新链接
+        function addNewLink() {
+            const name = document.getElementById('site-name').value;
+            const url = document.getElementById('site-url').value;
+            const category = document.getElementById('site-category').value;
+            
+            if (!name || !url) {
+                alert('请输入网站名称和地址');
+                return;
+            }
+            
+            // 创建新链接元素
+            const linkItem = document.createElement('div');
+            linkItem.className = 'link-item';
+            
+            // 尝试获取网站favicon
+            const faviconUrl = new URL(url).origin + '/favicon.ico';
+            
+            linkItem.innerHTML = `
+                <img src="${faviconUrl}" alt="${name}" onerror="this.src='https://www.google.com/s2/favicons?domain=${url}'">
+                <a href="${url}" target="_blank">${name}</a>
+            `;
+            
+            // 添加到选定的分类
+            document.getElementById(category).appendChild(linkItem);
+            
+            // 保存到本地存储
+            saveLinks();
+            
+            // 清空表单
+            document.getElementById('site-name').value = '';
+            document.getElementById('site-url').value = '';
+        }
+        
+        // 保存所有链接到本地存储
+        function saveLinks() {
+            const categories = ['common-sites', 'youtube-links', 'learning-resources', 'work-related'];
+            
+            categories.forEach(category => {
+                const links = [];
+                const elements = document.getElementById(category).querySelectorAll('.link-item');
+                
+                elements.forEach(element => {
+                    const link = {
+                        name: element.querySelector('a').textContent,
+                        url: element.querySelector('a').href
+                    };
+                    links.push(link);
+                });
+                
+                localStorage.setItem(category, JSON.stringify(links));
+            });
+        }
+        
+        // 加载保存的链接
+        window.addEventListener('load', function() {
+            const categories = ['common-sites', 'youtube-links', 'learning-resources', 'work-related'];
+            
+            categories.forEach(category => {
+                const savedLinks = localStorage.getItem(category);
+                
+                if (savedLinks) {
+                    const links = JSON.parse(savedLinks);
+                    const container = document.getElementById(category);
+                    
+                    // 清空默认链接
+                    container.innerHTML = '';
+                    
+                    links.forEach(link => {
+                        const linkItem = document.createElement('div');
+                        linkItem.className = 'link-item';
+                        
+                        const faviconUrl = new URL(link.url).origin + '/favicon.ico';
+                        
+                        linkItem.innerHTML = `
+                            <img src="${faviconUrl}" alt="${link.name}" onerror="this.src='https://www.google.com/s2/favicons?domain=${link.url}'">
+                            <a href="${link.url}" target="_blank">${link.name}</a>
+                        `;
+                        
+                        container.appendChild(linkItem);
+                    });
+                }
+            });
+        });
+
+        // 任务相关的函数
+        let tasks = [];
+
+        // 加载保存的任务
+        function loadTasks() {
+            const savedTasks = localStorage.getItem('tasks');
+            if (savedTasks) {
+                tasks = JSON.parse(savedTasks);
+                renderTasks();
+            }
+        }
+
+        // 添加新任务
+        function addTask() {
+            const input = document.getElementById('new-task');
+            const taskText = input.value.trim();
+            
+            if (taskText) {
+                tasks.push({
+                    text: taskText,
+                    completed: false,
+                    id: Date.now()
+                });
+                input.value = '';
+                saveTaskList();
+                renderTasks();
+            }
+        }
+
+        // 渲染任务列表
+        function renderTasks() {
+            const tasksList = document.getElementById('tasks-list');
+            tasksList.innerHTML = '';
+            
+            tasks.forEach(task => {
+                const li = document.createElement('li');
+                li.style.display = 'flex';
+                li.style.alignItems = 'center';
+                li.style.marginBottom = '10px';
+                li.style.padding = '5px';
+                li.style.backgroundColor = '#f9f9f9';
+                li.style.borderRadius = '5px';
+                
+                li.innerHTML = `
+                    <input type="checkbox" ${task.completed ? 'checked' : ''} 
+                           onchange="toggleTask(${task.id})" style="margin-right: 10px;">
+                    <span style="${task.completed ? 'text-decoration: line-through; color: #888;' : ''}">${task.text}</span>
+                    <button onclick="deleteTask(${task.id})" 
+                            style="margin-left: auto; padding: 2px 8px; background: #ff4444; color: white; border: none; border-radius: 3px;">
+                        删除
+                    </button>
+                `;
+                
+                tasksList.appendChild(li);
+            });
+        }
+
+        // 切换任务完成状态
+        function toggleTask(taskId) {
+            const task = tasks.find(t => t.id === taskId);
+            if (task) {
+                task.completed = !task.completed;
+                saveTaskList();
+                renderTasks();
+            }
+        }
+
+        // 删除任务
+        function deleteTask(taskId) {
+            tasks = tasks.filter(t => t.id !== taskId);
+            saveTaskList();
+            renderTasks();
+        }
+
+        // 清除已完成的任务
+        function clearCompletedTasks() {
+            tasks = tasks.filter(task => !task.completed);
+            saveTaskList();
+            renderTasks();
+        }
+
+        // 保存任务列表到本地存储
+        function saveTaskList() {
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+
+        // 添加回车键提交功能
+        document.getElementById('new-task').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addTask();
+            }
+        });
+
+        // 页面加载时加载任务
+        window.addEventListener('load', loadTasks);
+    </script>
+</body>
+</html>
