@@ -166,8 +166,9 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
         }
-
+        
         .task-manager h2 {
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
@@ -177,12 +178,13 @@
             font-size: 28px;
             text-align: left;
         }
-
+        
         .task-input {
             display: flex;
             margin-bottom: 20px;
+            width: 100%;
         }
-
+        
         .task-input input {
             flex: 1;
             padding: 12px 15px;
@@ -192,8 +194,9 @@
             font-size: 18px;
             text-align: left;
         }
-
+        
         .task-input button {
+            width: auto;
             padding: 12px 25px;
             background: linear-gradient(120deg, #4a89dc, #5a99ec);
             color: white;
@@ -202,15 +205,15 @@
             cursor: pointer;
             font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
             font-size: 18px;
-            text-align: left;
         }
-
+        
         #tasks-list {
             list-style: none;
             padding: 0;
             margin: 0;
+            width: 100%;
         }
-
+        
         #tasks-list li {
             display: flex;
             align-items: center;
@@ -219,34 +222,37 @@
             background: #f8f9fa;
             border-radius: 8px;
             border-left: 4px solid #4a89dc;
-            text-align: left;
-            padding-left: 15px;  /* 添加左内边距 */
+            width: 100%;
         }
-
+        
         #tasks-list li input[type="checkbox"] {
-            margin-left: 15px;
+            width: auto;
+            flex: 0 0 auto;
+            margin-right: 10px;
             transform: scale(1.2);
-            margin-left: 0;  /* 移除左边距 */
         }
-
+        
         #tasks-list li span {
             flex: 1;
             font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
             font-size: 20px;
             color: #333;
-            margin-right: 15px;
-            margin-left: 0;  /* 移除左边距 */
             text-align: left;
-            padding-left: 0;  /* 移除左内边距 */
+            padding-left: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-
+        
         #tasks-list li.completed span {
             color: #888;
             text-decoration: line-through;
         }
-
+        
         #tasks-list li button {
-            margin-left: auto;  /* 将删除按钮推到右边 */
+            margin-left: 10px;
+            width: auto;
+            flex: 0 0 auto;
             padding: 8px 15px;
             background: #ff4444;
             color: white;
@@ -256,12 +262,13 @@
             font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
             font-size: 16px;
         }
-
+        
         .task-controls {
             margin-top: 20px;
             text-align: left;
+            width: 100%;
         }
-
+        
         .task-controls button {
             padding: 10px 20px;
             background: #f0f0f0;
@@ -271,6 +278,16 @@
             cursor: pointer;
             font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
             font-size: 16px;
+            width: auto;
+        }
+        
+        /* 按钮悬停效果 */
+        .task-input button:hover,
+        #tasks-list li button:hover,
+        .task-controls button:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            transition: all 0.3s ease;
         }
     </style>
 </head>
@@ -284,7 +301,6 @@
         <div class="category">
             <h2>常用网站</h2>
             <div class="links" id="common-sites">
-                
                 <div class="link-item">
                     <img src="https://you.com/favicon.ico" alt="You.com" onerror="this.src='https://www.google.com/s2/favicons?domain=you.com'">
                     <a href="https://you.com" target="_blank">You.com</a>
@@ -351,8 +367,6 @@
             </div>
         </div>
         
-        
-        
         <div class="task-manager">
             <h2>任务管理</h2>
             <div class="task-input">
@@ -365,104 +379,8 @@
             </div>
         </div>
 
-        <script>
-            // 任务管理相关变量
-            let tasks = [];
-            
-            // 加载任务列表
-            function loadTasks() {
-                const savedTasks = localStorage.getItem('tasks');
-                if (savedTasks) {
-                    tasks = JSON.parse(savedTasks);
-                }
-                renderTasks();
-            }
-            
-            // 添加新任务
-            function addTask() {
-                const taskInput = document.getElementById('new-task');
-                const taskText = taskInput.value.trim();
-                
-                if (taskText) {
-                    const newTask = {
-                        id: Date.now(),
-                        text: taskText,
-                        completed: false
-                    };
-                    
-                    tasks.push(newTask);
-                    saveTaskList();
-                    taskInput.value = '';
-                    renderTasks();
-                }
-            }
-            
-            // 渲染任务列表
-            function renderTasks() {
-                const tasksList = document.getElementById('tasks-list');
-                tasksList.innerHTML = '';
-                
-                tasks.forEach(task => {
-                    const li = document.createElement('li');
-                    if (task.completed) {
-                        li.className = 'completed';
-                    }
-                    
-                    li.innerHTML = `
-                        <input type="checkbox" ${task.completed ? 'checked' : ''} 
-                               onclick="toggleTask(${task.id})">
-                        <span>${task.text}</span>
-                        <button onclick="deleteTask(${task.id})">删除</button>
-                    `;
-                    
-                    tasksList.appendChild(li);
-                });
-            }
-            
-            // 切换任务完成状态
-            function toggleTask(taskId) {
-                const task = tasks.find(t => t.id === taskId);
-                if (task) {
-                    task.completed = !task.completed;
-                    saveTaskList();
-                    renderTasks();
-                }
-            }
-            
-            // 删除任务
-            function deleteTask(taskId) {
-                tasks = tasks.filter(t => t.id !== taskId);
-                saveTaskList();
-                renderTasks();
-            }
-            
-            // 清除已完成的任务
-            function clearCompletedTasks() {
-                tasks = tasks.filter(task => !task.completed);
-                saveTaskList();
-                renderTasks();
-            }
-            
-            // 保存任务列表到本地存储
-            function saveTaskList() {
-                localStorage.setItem('tasks', JSON.stringify(tasks));
-            }
-            
-            // 添加回车键提交功能
-            document.getElementById('new-task').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    addTask();
-                }
-            });
-            
-            // 页面加载时加载任务
-            window.addEventListener('load', loadTasks);
-        </script>
-        
         <div class="add-link-form">
-        
-            
-            
+            <!-- 此处留空，可根据需要添加新链接功能 -->
         </div>
     </div>
 
@@ -484,104 +402,100 @@
         
         updateDateTime();
         setInterval(updateDateTime, 1000);
+
+        // 任务管理相关变量
+        let tasks = [];
         
-        // 保存待办事项到本地存储
-        document.getElementById('daily-notes').addEventListener('input', function() {
-            localStorage.setItem('dailyNotes', this.value);
-        });
-        
-        // 加载保存的待办事项
-        window.addEventListener('load', function() {
-            const savedNotes = localStorage.getItem('dailyNotes');
-            if (savedNotes) {
-                document.getElementById('daily-notes').value = savedNotes;
+        // 加载任务列表
+        function loadTasks() {
+            const savedTasks = localStorage.getItem('tasks');
+            if (savedTasks) {
+                tasks = JSON.parse(savedTasks);
             }
-        });
-        
-        // 添加新链接
-        function addNewLink() {
-            const name = document.getElementById('site-name').value;
-            const url = document.getElementById('site-url').value;
-            const category = document.getElementById('site-category').value;
-            
-            if (!name || !url) {
-                alert('请输入网站名称和地址');
-                return;
-            }
-            
-            // 创建新链接元素
-            const linkItem = document.createElement('div');
-            linkItem.className = 'link-item';
-            
-            // 尝试获取网站favicon
-            const faviconUrl = new URL(url).origin + '/favicon.ico';
-            
-            linkItem.innerHTML = `
-                <img src="${faviconUrl}" alt="${name}" onerror="this.src='https://www.google.com/s2/favicons?domain=${url}'">
-                <a href="${url}" target="_blank">${name}</a>
-            `;
-            
-            // 添加到选定的分类
-            document.getElementById(category).appendChild(linkItem);
-            
-            // 保存到本地存储
-            saveLinks();
-            
-            // 清空表单
-            document.getElementById('site-name').value = '';
-            document.getElementById('site-url').value = '';
+            renderTasks();
         }
         
-        // 保存所有链接到本地存储
-        function saveLinks() {
-            const categories = ['common-sites', 'youtube-links', 'learning-resources', 'work-related'];
+        // 添加新任务
+        function addTask() {
+            const taskInput = document.getElementById('new-task');
+            const taskText = taskInput.value.trim();
             
-            categories.forEach(category => {
-                const links = [];
-                const elements = document.getElementById(category).querySelectorAll('.link-item');
+            if (taskText) {
+                const newTask = {
+                    id: Date.now(),
+                    text: taskText,
+                    completed: false
+                };
                 
-                elements.forEach(element => {
-                    const link = {
-                        name: element.querySelector('a').textContent,
-                        url: element.querySelector('a').href
-                    };
-                    links.push(link);
-                });
-                
-                localStorage.setItem(category, JSON.stringify(links));
-            });
+                tasks.push(newTask);
+                saveTaskList();
+                taskInput.value = '';
+                renderTasks();
+            }
         }
         
-        // 加载保存的链接
-        window.addEventListener('load', function() {
-            const categories = ['common-sites', 'youtube-links', 'learning-resources', 'work-related'];
+        // 渲染任务列表
+        function renderTasks() {
+            const tasksList = document.getElementById('tasks-list');
+            tasksList.innerHTML = '';
             
-            categories.forEach(category => {
-                const savedLinks = localStorage.getItem(category);
-                
-                if (savedLinks) {
-                    const links = JSON.parse(savedLinks);
-                    const container = document.getElementById(category);
-                    
-                    // 清空默认链接
-                    container.innerHTML = '';
-                    
-                    links.forEach(link => {
-                        const linkItem = document.createElement('div');
-                        linkItem.className = 'link-item';
-                        
-                        const faviconUrl = new URL(link.url).origin + '/favicon.ico';
-                        
-                        linkItem.innerHTML = `
-                            <img src="${faviconUrl}" alt="${link.name}" onerror="this.src='https://www.google.com/s2/favicons?domain=${link.url}'">
-                            <a href="${link.url}" target="_blank">${link.name}</a>
-                        `;
-                        
-                        container.appendChild(linkItem);
-                    });
+            tasks.forEach(task => {
+                const li = document.createElement('li');
+                if (task.completed) {
+                    li.className = 'completed';
                 }
+                
+                li.innerHTML = `
+                    <input type="checkbox" ${task.completed ? 'checked' : ''} 
+                           onclick="toggleTask(${task.id})">
+                    <span>${task.text}</span>
+                    <button onclick="deleteTask(${task.id})">删除</button>
+                `;
+                
+                tasksList.appendChild(li);
             });
+        }
+        
+        // 切换任务完成状态
+        function toggleTask(taskId) {
+            const task = tasks.find(t => t.id === taskId);
+            if (task) {
+                task.completed = !task.completed;
+                saveTaskList();
+                renderTasks();
+            }
+        }
+        
+        // 删除任务
+        function deleteTask(taskId) {
+            tasks = tasks.filter(t => t.id !== taskId);
+            saveTaskList();
+            renderTasks();
+        }
+        
+        // 清除已完成的任务
+        function clearCompletedTasks() {
+            tasks = tasks.filter(task => !task.completed);
+            saveTaskList();
+            renderTasks();
+        }
+        
+        // 保存任务列表到本地存储
+        function saveTaskList() {
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+        
+        // 添加回车键提交功能
+        document.getElementById('new-task').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addTask();
+            }
         });
+        
+        // 页面加载时加载任务
+        window.addEventListener('load', loadTasks);
+
+        // 注意：已删除 daily-notes 相关代码，避免因不存在该元素而导致脚本错误。
     </script>
 </body>
 </html>
