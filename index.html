@@ -305,6 +305,106 @@
                 <button onclick="clearCompletedTasks()">清除已完成任务</button>
             </div>
         </div>
+
+        <script>
+            // 任务管理相关变量
+            let tasks = [];
+            
+            // 加载任务列表
+            function loadTasks() {
+                const savedTasks = localStorage.getItem('tasks');
+                if (savedTasks) {
+                    tasks = JSON.parse(savedTasks);
+                }
+                renderTasks();
+            }
+            
+            // 添加新任务
+            function addTask() {
+                const taskInput = document.getElementById('new-task');
+                const taskText = taskInput.value.trim();
+                
+                if (taskText) {
+                    const newTask = {
+                        id: Date.now(),
+                        text: taskText,
+                        completed: false
+                    };
+                    
+                    tasks.push(newTask);
+                    saveTaskList();
+                    taskInput.value = '';
+                    renderTasks();
+                }
+            }
+            
+            // 渲染任务列表
+            function renderTasks() {
+                const tasksList = document.getElementById('tasks-list');
+                tasksList.innerHTML = '';
+                
+                tasks.forEach(task => {
+                    const li = document.createElement('li');
+                    li.style.padding = '8px';
+                    li.style.margin = '5px 0';
+                    li.style.backgroundColor = '#f9f9f9';
+                    li.style.borderRadius = '5px';
+                    li.style.display = 'flex';
+                    li.style.alignItems = 'center';
+                    
+                    li.innerHTML = `
+                        <input type="checkbox" ${task.completed ? 'checked' : ''} 
+                               onclick="toggleTask(${task.id})" style="margin-right: 10px;">
+                        <span style="${task.completed ? 'text-decoration: line-through; color: #888;' : ''}">${task.text}</span>
+                        <button onclick="deleteTask(${task.id})" 
+                                style="margin-left: auto; padding: 2px 8px; background: #ff4444; color: white; border: none; border-radius: 3px;">
+                            删除
+                        </button>
+                    `;
+                    
+                    tasksList.appendChild(li);
+                });
+            }
+            
+            // 切换任务完成状态
+            function toggleTask(taskId) {
+                const task = tasks.find(t => t.id === taskId);
+                if (task) {
+                    task.completed = !task.completed;
+                    saveTaskList();
+                    renderTasks();
+                }
+            }
+            
+            // 删除任务
+            function deleteTask(taskId) {
+                tasks = tasks.filter(t => t.id !== taskId);
+                saveTaskList();
+                renderTasks();
+            }
+            
+            // 清除已完成的任务
+            function clearCompletedTasks() {
+                tasks = tasks.filter(task => !task.completed);
+                saveTaskList();
+                renderTasks();
+            }
+            
+            // 保存任务列表到本地存储
+            function saveTaskList() {
+                localStorage.setItem('tasks', JSON.stringify(tasks));
+            }
+            
+            // 添加回车键提交功能
+            document.getElementById('new-task').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    addTask();
+                }
+            });
+            
+            // 页面加载时加载任务
+            window.addEventListener('load', loadTasks);
+        </script>
         
         <div class="add-link-form">
         
@@ -429,102 +529,6 @@
                 }
             });
         });
-
-        // 任务相关的函数
-        let tasks = [];
-
-        // 加载保存的任务
-        function loadTasks() {
-            const savedTasks = localStorage.getItem('tasks');
-            if (savedTasks) {
-                tasks = JSON.parse(savedTasks);
-                renderTasks();
-            }
-        }
-
-        // 添加新任务
-        function addTask() {
-            const input = document.getElementById('new-task');
-            const taskText = input.value.trim();
-            
-            if (taskText) {
-                tasks.push({
-                    text: taskText,
-                    completed: false,
-                    id: Date.now()
-                });
-                input.value = '';
-                saveTaskList();
-                renderTasks();
-            }
-        }
-
-        // 渲染任务列表
-        function renderTasks() {
-            const tasksList = document.getElementById('tasks-list');
-            tasksList.innerHTML = '';
-            
-            tasks.forEach(task => {
-                const li = document.createElement('li');
-                li.style.display = 'flex';
-                li.style.alignItems = 'center';
-                li.style.marginBottom = '10px';
-                li.style.padding = '5px';
-                li.style.backgroundColor = '#f9f9f9';
-                li.style.borderRadius = '5px';
-                
-                li.innerHTML = `
-                    <input type="checkbox" ${task.completed ? 'checked' : ''} 
-                           onchange="toggleTask(${task.id})" style="margin-right: 10px;">
-                    <span style="${task.completed ? 'text-decoration: line-through; color: #888;' : ''}">${task.text}</span>
-                    <button onclick="deleteTask(${task.id})" 
-                            style="margin-left: auto; padding: 2px 8px; background: #ff4444; color: white; border: none; border-radius: 3px;">
-                        删除
-                    </button>
-                `;
-                
-                tasksList.appendChild(li);
-            });
-        }
-
-        // 切换任务完成状态
-        function toggleTask(taskId) {
-            const task = tasks.find(t => t.id === taskId);
-            if (task) {
-                task.completed = !task.completed;
-                saveTaskList();
-                renderTasks();
-            }
-        }
-
-        // 删除任务
-        function deleteTask(taskId) {
-            tasks = tasks.filter(t => t.id !== taskId);
-            saveTaskList();
-            renderTasks();
-        }
-
-        // 清除已完成的任务
-        function clearCompletedTasks() {
-            tasks = tasks.filter(task => !task.completed);
-            saveTaskList();
-            renderTasks();
-        }
-
-        // 保存任务列表到本地存储
-        function saveTaskList() {
-            localStorage.setItem('tasks', JSON.stringify(tasks));
-        }
-
-        // 添加回车键提交功能
-        document.getElementById('new-task').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                addTask();
-            }
-        });
-
-        // 页面加载时加载任务
-        window.addEventListener('load', loadTasks);
     </script>
 </body>
 </html>
