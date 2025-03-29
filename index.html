@@ -80,7 +80,7 @@
         .link-item img {
             width: 20px;
             height: 20px;
-            margin-right: 10px;
+            margin-left: 10px;
         }
         
         .link-item a {
@@ -163,7 +163,7 @@
         .task-manager {
             background: #fff;
             margin-bottom: 20px;
-            padding: 15px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -171,47 +171,106 @@
         .task-manager h2 {
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #444;
+            font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
+            font-size: 28px;
+            text-align: left;
         }
 
         .task-input {
             display: flex;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .task-input input {
             flex: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px 0 0 5px;
+            padding: 12px 15px;
+            border: 2px solid #4a89dc;
+            border-radius: 8px 0 0 8px;
+            font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
+            font-size: 18px;
+            text-align: left;
         }
 
         .task-input button {
-            padding: 10px 15px;
-            background: #4a89dc;
+            padding: 12px 25px;
+            background: linear-gradient(120deg, #4a89dc, #5a99ec);
             color: white;
             border: none;
-            border-radius: 0 5px 5px 0;
+            border-radius: 0 8px 8px 0;
             cursor: pointer;
+            font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        #tasks-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #tasks-list li {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #4a89dc;
+            text-align: left;
+            padding-left: 15px;  /* 添加左内边距 */
+        }
+
+        #tasks-list li input[type="checkbox"] {
+            margin-left: 15px;
+            transform: scale(1.2);
+            margin-left: 0;  /* 移除左边距 */
+        }
+
+        #tasks-list li span {
+            flex: 1;
+            font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
+            font-size: 20px;
+            color: #333;
+            margin-right: 15px;
+            margin-left: 0;  /* 移除左边距 */
+            text-align: left;
+            padding-left: 0;  /* 移除左内边距 */
+        }
+
+        #tasks-list li.completed span {
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        #tasks-list li button {
+            margin-left: auto;  /* 将删除按钮推到右边 */
+            padding: 8px 15px;
+            background: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
+            font-size: 16px;
         }
 
         .task-controls {
-            margin-top: 15px;
-            text-align: right;
+            margin-top: 20px;
+            text-align: left;
         }
 
         .task-controls button {
-            padding: 8px 12px;
+            padding: 10px 20px;
             background: #f0f0f0;
             color: #666;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
-        }
-
-        .task-controls button:hover {
-            background: #e0e0e0;
+            font-family: "华文行楷", "楷体", "STKaiti", "华文楷体", serif;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -300,7 +359,7 @@
                 <input type="text" id="new-task" placeholder="添加新任务...">
                 <button onclick="addTask()">添加</button>
             </div>
-            <ul id="tasks-list" style="list-style-type: none; padding: 0;"></ul>
+            <ul id="tasks-list"></ul>
             <div class="task-controls">
                 <button onclick="clearCompletedTasks()">清除已完成任务</button>
             </div>
@@ -345,21 +404,15 @@
                 
                 tasks.forEach(task => {
                     const li = document.createElement('li');
-                    li.style.padding = '8px';
-                    li.style.margin = '5px 0';
-                    li.style.backgroundColor = '#f9f9f9';
-                    li.style.borderRadius = '5px';
-                    li.style.display = 'flex';
-                    li.style.alignItems = 'center';
+                    if (task.completed) {
+                        li.className = 'completed';
+                    }
                     
                     li.innerHTML = `
                         <input type="checkbox" ${task.completed ? 'checked' : ''} 
-                               onclick="toggleTask(${task.id})" style="margin-right: 10px;">
-                        <span style="${task.completed ? 'text-decoration: line-through; color: #888;' : ''}">${task.text}</span>
-                        <button onclick="deleteTask(${task.id})" 
-                                style="margin-left: auto; padding: 2px 8px; background: #ff4444; color: white; border: none; border-radius: 3px;">
-                            删除
-                        </button>
+                               onclick="toggleTask(${task.id})">
+                        <span>${task.text}</span>
+                        <button onclick="deleteTask(${task.id})">删除</button>
                     `;
                     
                     tasksList.appendChild(li);
