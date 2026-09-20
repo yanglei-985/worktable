@@ -1,0 +1,1475 @@
+{
+  "videoId": "1GowFTjbUnk",
+  "title": "NVIDIA Explained Like You're 5",
+  "channel": "Crayon Capital",
+  "duration": 870,
+  "sourceUrl": "https://www.youtube.com/watch?v=1GowFTjbUnk",
+  "captionSources": {
+    "english": "YouTube English (Original)",
+    "chinese": "Prepared Simplified Chinese translation, batched with adjacent cue context; YouTube translated track retained as fallback"
+  },
+  "generatedAt": "2026-09-20T15:54:32.428Z",
+  "cueCount": 243,
+  "cues": [
+    {
+      "start": 0,
+      "end": 5.23,
+      "text": "This dishwasher boy built a $5 trillion empire from the table of a Denny's diner.",
+      "zh": "这个洗碗工从丹尼餐厅的餐桌上建立了一个价值 5 万亿美元的帝国。"
+    },
+    {
+      "start": 5.24,
+      "end": 13.87,
+      "text": "He pitched the business plan over cheap coffee in 1992, and 34 years later, his company makes $20 million every single hour.",
+      "zh": "1992 年，他通过廉价咖啡提出了商业计划，34 年后，他的公司每小时赚取 2000 万美元。"
+    },
+    {
+      "start": 13.88,
+      "end": 20.19,
+      "text": "Not from the safe bet, but from a gamble nobody believed in that crushed entire industries and took over the AI space,",
+      "zh": "不是来自安全的赌注，而是来自一场没有人相信的赌博，这场赌博摧毁了整个行业并接管了人工智能领域，"
+    },
+    {
+      "start": 20.2,
+      "end": 23.83,
+      "text": "the gaming industry, and even all of your app algorithms.",
+      "zh": "游戏行业，甚至您所有的应用程序算法。"
+    },
+    {
+      "start": 23.84,
+      "end": 29.71,
+      "text": "And just as he started winning, the government moved to bring him down.",
+      "zh": "就在他开始获胜时，政府开始将他打倒。"
+    },
+    {
+      "start": 29.72,
+      "end": 33.43,
+      "text": "Jensen Huang was born in Taiwan in 1963.",
+      "zh": "黄仁勋1963年出生于台湾。"
+    },
+    {
+      "start": 33.44,
+      "end": 38.51,
+      "text": "When he was nine, his parents sent him and his brother to America for a better education.",
+      "zh": "当他九岁时，他的父母把他和他的兄弟送到美国接受更好的教育。"
+    },
+    {
+      "start": 38.52,
+      "end": 42.269,
+      "text": "The plan was simple.",
+      "zh": "计划很简单。"
+    },
+    {
+      "start": 42.279,
+      "end": 45.67,
+      "text": "Live with relatives in Kentucky, study hard, build a future.",
+      "zh": "与肯塔基州的亲戚一起生活，努力学习，共创未来。"
+    },
+    {
+      "start": 45.68,
+      "end": 48.763,
+      "text": "This doesn't look like a school.",
+      "zh": "这看起来不像一所学校。"
+    },
+    {
+      "start": 48.773,
+      "end": 51.418,
+      "text": "It looks more like somewhere people get sent after they've done something very, very wrong.",
+      "zh": "它看起来更像是人们在做了非常非常错误的事情后被送到某个地方。"
+    },
+    {
+      "start": 51.428,
+      "end": 54.11,
+      "text": "That's because it kind of is.",
+      "zh": "那是因为它确实如此。"
+    },
+    {
+      "start": 54.12,
+      "end": 56.27,
+      "text": "Welcome to Oneida Baptist Institute.",
+      "zh": "欢迎来到奥奈达浸信会学院。"
+    },
+    {
+      "start": 56.28,
+      "end": 60.55,
+      "text": "You'll learn English, discipline, and how not to complain while cleaning bathrooms.",
+      "zh": "您将学习英语、纪律以及如何在清洁浴室时不抱怨。"
+    },
+    {
+      "start": 60.56,
+      "end": 65.79,
+      "text": "This is not how most tech CEO origin stories start, but it didn't break him.",
+      "zh": "大多数科技公司首席执行官的出身故事并不是这样开始的，但这并没有让他崩溃。"
+    },
+    {
+      "start": 65.8,
+      "end": 68.27,
+      "text": "It taught him something no lecture hall could.",
+      "zh": "它教会了他一些演讲厅无法教给他的东西。"
+    },
+    {
+      "start": 68.28,
+      "end": 72.27,
+      "text": "When the situation is terrible, you adapt or you disappear.",
+      "zh": "当情况很糟糕时，你要么适应，要么消失。"
+    },
+    {
+      "start": 72.28,
+      "end": 81.27,
+      "text": "He eventually made it to Oregon State, then Stanford, spent years at chip companies, AMD, then LSI Logic, studying",
+      "zh": "他最终进入了俄勒冈州立大学，然后是斯坦福大学，在芯片公司、AMD、然后是 LSI Logic 工作了数年，学习"
+    },
+    {
+      "start": 81.28,
+      "end": 85.91,
+      "text": "semiconductors with a level of obsession that was, frankly, a little alarming.",
+      "zh": "坦率地说，人们对半导体的痴迷程度有点令人担忧。"
+    },
+    {
+      "start": 85.92,
+      "end": 88.95,
+      "text": "By 1992, Jensen had an idea.",
+      "zh": "1992 年，Jensen 有了一个想法。"
+    },
+    {
+      "start": 88.96,
+      "end": 91.03,
+      "text": "Graphics are going to change computing.",
+      "zh": "图形将改变计算。"
+    },
+    {
+      "start": 91.04,
+      "end": 95.083,
+      "text": "Games are getting bigger.",
+      "zh": "游戏变得越来越大。"
+    },
+    {
+      "start": 95.093,
+      "end": 96.293,
+      "text": "3D is getting harder.",
+      "zh": "3D 越来越难了。"
+    },
+    {
+      "start": 95.103,
+      "end": 97.11,
+      "text": "CPUs can't carry this forever.",
+      "zh": "CPU 不可能永远承受这种情况。"
+    },
+    {
+      "start": 97.12,
+      "end": 100.15,
+      "text": "Someone is going to build a chip for this new world.",
+      "zh": "有人将为这个新世界制造芯片。"
+    },
+    {
+      "start": 100.16,
+      "end": 101.91,
+      "text": "I think it should be us.",
+      "zh": "我想应该是我们。"
+    },
+    {
+      "start": 101.92,
+      "end": 108.51,
+      "text": "Jensen, I have a mortgage, a stable job, and a family that currently believes I make responsible decisions.",
+      "zh": "詹森，我有抵押贷款、稳定的工作，而且家人目前相信我会做出负责任的决定。"
+    },
+    {
+      "start": 108.52,
+      "end": 109.72,
+      "text": "Good.",
+      "zh": "好的。"
+    },
+    {
+      "start": 109.6,
+      "end": 113.23,
+      "text": "Then this will be exciting.",
+      "zh": "那么这将是令人兴奋的。"
+    },
+    {
+      "start": 113.24,
+      "end": 117.71,
+      "text": "So, the plan is, quit our jobs, start from zero, and build a chip for a market that barely exists?",
+      "zh": "那么，我们的计划是，辞去工作，从零开始，为一个几乎不存在的市场打造一款芯片？"
+    },
+    {
+      "start": 117.72,
+      "end": 118.92,
+      "text": "Correct.",
+      "zh": "正确的。"
+    },
+    {
+      "start": 118.809,
+      "end": 122.43,
+      "text": "I hate that this sounds insane and also kind of logical.",
+      "zh": "我讨厌这听起来很疯狂，但也有点合乎逻辑。"
+    },
+    {
+      "start": 122.44,
+      "end": 124.83,
+      "text": "They called the company Nvidia.",
+      "zh": "他们称该公司为Nvidia。"
+    },
+    {
+      "start": 124.84,
+      "end": 127.099,
+      "text": "The idea was ambitious.",
+      "zh": "这个想法是雄心勃勃的。"
+    },
+    {
+      "start": 127.109,
+      "end": 131.106,
+      "text": "Build one powerful graphics chip that could handle everything.",
+      "zh": "打造一款可以处理一切的强大图形芯片。"
+    },
+    {
+      "start": 131.116,
+      "end": 133.07,
+      "text": "A clean universal chip for the future of gaming hardware.",
+      "zh": "面向游戏硬件未来的干净通用芯片。"
+    },
+    {
+      "start": 133.08,
+      "end": 136.756,
+      "text": "For 2 years they worked.",
+      "zh": "他们工作了两年。"
+    },
+    {
+      "start": 136.766,
+      "end": 138.753,
+      "text": "They spent every dollar they had.",
+      "zh": "他们花光了他们所有的每一块钱。"
+    },
+    {
+      "start": 138.763,
+      "end": 142.59,
+      "text": "And in 1995, Nvidia launched its first product, the NV1.",
+      "zh": "1995年，Nvidia推出了第一款产品NV1。"
+    },
+    {
+      "start": 142.6,
+      "end": 145.59,
+      "text": "Jensen, we have a problem.",
+      "zh": "詹森，我们有一个问题。"
+    },
+    {
+      "start": 145.6,
+      "end": 149.812,
+      "text": "Microsoft just published the Direct X spec, full triangle based rendering pipeline.",
+      "zh": "微软刚刚发布了 Direct X 规范，即基于完整三角形的渲染管道。"
+    },
+    {
+      "start": 149.822,
+      "end": 152.99,
+      "text": "Holy crap, the NV1 runs quadratic mapping?",
+      "zh": "天哪，NV1 运行二次映射？"
+    },
+    {
+      "start": 153,
+      "end": 154.2,
+      "text": "Yes.",
+      "zh": "是的。"
+    },
+    {
+      "start": 154.12,
+      "end": 158.102,
+      "text": "We are the only ones going in the opposite direction.",
+      "zh": "我们是唯一走相反方向的人。"
+    },
+    {
+      "start": 158.112,
+      "end": 160.11,
+      "text": "Games are about to be built from tiny flat triangles?",
+      "zh": "游戏将由微小的平面三角形构建而成？"
+    },
+    {
+      "start": 160.12,
+      "end": 162.75,
+      "text": "Our chip is built for curved surfaces.",
+      "zh": "我们的芯片专为曲面而设计。"
+    },
+    {
+      "start": 162.76,
+      "end": 165.67,
+      "text": "We built the wrong chip with tremendous confidence.",
+      "zh": "我们怀着巨大的信心制造了错误的芯片。"
+    },
+    {
+      "start": 165.68,
+      "end": 168.583,
+      "text": "2 years, every dollar.",
+      "zh": "2年，每一美元。"
+    },
+    {
+      "start": 168.593,
+      "end": 170.697,
+      "text": "A chip built for a world that no longer existed.",
+      "zh": "为不再存在的世界而构建的芯片。"
+    },
+    {
+      "start": 170.707,
+      "end": 171.907,
+      "text": "The NV1 flopped.",
+      "zh": "NV1失败了。"
+    },
+    {
+      "start": 171.64,
+      "end": 175.055,
+      "text": "But Nvidia still had a lifeline.",
+      "zh": "但英伟达仍有生命线。"
+    },
+    {
+      "start": 175.065,
+      "end": 181.07,
+      "text": "Sega had contracted them to build the graphics processor for the company's next generation console, the Dreamcast.",
+      "zh": "世嘉与他们签订了合同，为该公司的下一代游戏机 Dreamcast 制造图形处理器。"
+    },
+    {
+      "start": 181.08,
+      "end": 184.55,
+      "text": "Real money, real chance to start over.",
+      "zh": "真正的钱，真正重新开始的机会。"
+    },
+    {
+      "start": 184.56,
+      "end": 186.27,
+      "text": "There was only one problem.",
+      "zh": "只有一个问题。"
+    },
+    {
+      "start": 186.28,
+      "end": 189.596,
+      "text": "Sega's chip used the same dead-end technology.",
+      "zh": "世嘉的芯片也使用了同样的死端技术。"
+    },
+    {
+      "start": 189.606,
+      "end": 191.63,
+      "text": "You're doing the Sega math again, aren't you?",
+      "zh": "你又在做世嘉数学了，不是吗？"
+    },
+    {
+      "start": 191.64,
+      "end": 196.769,
+      "text": "We'll spend the next year building something we already know is dead.",
+      "zh": "我们将在明年建造一些我们已经知道已经死了的东西。"
+    },
+    {
+      "start": 196.779,
+      "end": 198.71,
+      "text": "And if we cancel, we lose the only customer still paying us.",
+      "zh": "如果我们取消，我们就会失去唯一仍在向我们付款的客户。"
+    },
+    {
+      "start": 198.72,
+      "end": 201.55,
+      "text": "Uh, Pretty much.",
+      "zh": "呃，差不多了。"
+    },
+    {
+      "start": 201.56,
+      "end": 203.75,
+      "text": "I miss normal employment.",
+      "zh": "我怀念正常的工作。"
+    },
+    {
+      "start": 203.76,
+      "end": 206.47,
+      "text": "If we're going to die, let's die building the right chip.",
+      "zh": "如果我们要死，就让我们死在建造正确的芯片上吧。"
+    },
+    {
+      "start": 206.48,
+      "end": 209.03,
+      "text": "So Jensen flew to Japan.",
+      "zh": "于是詹森飞往日本。"
+    },
+    {
+      "start": 209.04,
+      "end": 211.684,
+      "text": "The chip is a dead end.",
+      "zh": "芯片是死胡同。"
+    },
+    {
+      "start": 211.694,
+      "end": 213.87,
+      "text": "You should cancel our contract and find someone else.",
+      "zh": "你应该取消我们的合同并另找其他人。"
+    },
+    {
+      "start": 213.88,
+      "end": 216.634,
+      "text": "We shouldn't finish the contract.",
+      "zh": "我们不应该完成合同。"
+    },
+    {
+      "start": 216.644,
+      "end": 218.39,
+      "text": "It would be a waste of your money.",
+      "zh": "这会浪费你的钱。"
+    },
+    {
+      "start": 218.4,
+      "end": 220.838,
+      "text": "There's one more thing.",
+      "zh": "还有一件事。"
+    },
+    {
+      "start": 220.848,
+      "end": 223.628,
+      "text": "I still need the money, the $5 million remaining on our contract.",
+      "zh": "我还需要钱，我们合同上还剩下 500 万美元。"
+    },
+    {
+      "start": 223.638,
+      "end": 226.61,
+      "text": "Please put it into Nvidia as an investment instead.",
+      "zh": "请把它作为投资投入到Nvidia。"
+    },
+    {
+      "start": 226.62,
+      "end": 228.79,
+      "text": "Otherwise, we'll vaporize overnight.",
+      "zh": "否则，我们就会在一夜之间蒸发。"
+    },
+    {
+      "start": 228.8,
+      "end": 231.883,
+      "text": "I have nothing to offer you.",
+      "zh": "我没有什么可以提供给你的。"
+    },
+    {
+      "start": 231.893,
+      "end": 235.11,
+      "text": "This money will most likely be lost, but I'm asking anyway.",
+      "zh": "这笔钱很可能会丢失，但我还是要问。"
+    },
+    {
+      "start": 235.12,
+      "end": 236.91,
+      "text": "I'll need a few days.",
+      "zh": "我需要几天时间。"
+    },
+    {
+      "start": 236.92,
+      "end": 240.762,
+      "text": "Jensen bowed, walked out, and got on a plane.",
+      "zh": "Jensen鞠了个躬，走出去，上了飞机。"
+    },
+    {
+      "start": 240.772,
+      "end": 245.43,
+      "text": "Nothing to do now but sit, and wait, and watch the Pacific stretch out beneath him.",
+      "zh": "现在无事可做，只能坐着等待，看着太平洋在他脚下伸展。"
+    },
+    {
+      "start": 245.44,
+      "end": 248.11,
+      "text": "Jensen, you might want to see this.",
+      "zh": "詹森，你可能想看看这个。"
+    },
+    {
+      "start": 248.12,
+      "end": 252.622,
+      "text": "He opens it, eyes wide.",
+      "zh": "他睁大眼睛打开它。"
+    },
+    {
+      "start": 252.632,
+      "end": 255.03,
+      "text": "It's a massive 10% offer on the value of BetterHelp.",
+      "zh": "这是 BetterHelp 价值 10% 的巨额优惠。"
+    },
+    {
+      "start": 255.04,
+      "end": 256.67,
+      "text": "Just kidding.",
+      "zh": "只是在开玩笑。"
+    },
+    {
+      "start": 256.68,
+      "end": 259.719,
+      "text": "Let's be real for a second.",
+      "zh": "让我们面对现实吧。"
+    },
+    {
+      "start": 259.729,
+      "end": 263.79,
+      "text": "When the outcome is completely out of your hands, the anxiety Did I make the right call?",
+      "zh": "当结果完全不由你掌控时，你会焦虑：我做出了正确的决定吗？"
+    },
+    {
+      "start": 263.8,
+      "end": 266.645,
+      "text": "That noise won't switch off.",
+      "zh": "那噪音不会消失。"
+    },
+    {
+      "start": 266.655,
+      "end": 267.855,
+      "text": "It doesn't go away on its own.",
+      "zh": "它不会自行消失。"
+    },
+    {
+      "start": 267.64,
+      "end": 271.19,
+      "text": "The hardest part for me was noticing the pattern.",
+      "zh": "对我来说最困难的部分是注意到这种模式。"
+    },
+    {
+      "start": 271.2,
+      "end": 275.27,
+      "text": "I was pushing through instead of actually dealing with anything.",
+      "zh": "我只是在坚持下去，而不是真正处理任何事情。"
+    },
+    {
+      "start": 275.28,
+      "end": 277.59,
+      "text": "My therapist asked me one question.",
+      "zh": "我的治疗师问了我一个问题。"
+    },
+    {
+      "start": 277.6,
+      "end": 281.31,
+      "text": "Are you solving something, or are you rehearsing a disaster?",
+      "zh": "你是在解决问题，还是在预演一场灾难？"
+    },
+    {
+      "start": 281.32,
+      "end": 283.836,
+      "text": "I didn't have an answer.",
+      "zh": "我没有答案。"
+    },
+    {
+      "start": 283.846,
+      "end": 287.99,
+      "text": "Just having a name for what I was doing, that single reframe broke the loop.",
+      "zh": "只是为我正在做的事情命名，那个单一的重构就打破了循环。"
+    },
+    {
+      "start": 288,
+      "end": 292.95,
+      "text": "BetterHelp, the paid partner of today's video, makes starting therapy easier.",
+      "zh": "BetterHelp，今天视频的付费合作伙伴，使开始治疗变得更加容易。"
+    },
+    {
+      "start": 292.96,
+      "end": 299.056,
+      "text": "Take a short quiz, get matched with a credential therapist, and meet by phone, video, or text.",
+      "zh": "参加一个简短的测验，与一位有资质的治疗师进行匹配，并通过电话、视频或短信进行会面。"
+    },
+    {
+      "start": 299.066,
+      "end": 301.11,
+      "text": "Whatever works for your schedule.",
+      "zh": "无论适合您的日程安排。"
+    },
+    {
+      "start": 301.12,
+      "end": 305.19,
+      "text": "If it's not the right fit, switching costs nothing extra.",
+      "zh": "如果不合适，更换不需要额外费用。"
+    },
+    {
+      "start": 305.2,
+      "end": 306.79,
+      "text": "And it's working.",
+      "zh": "它正在发挥作用。"
+    },
+    {
+      "start": 306.8,
+      "end": 313.03,
+      "text": "Over 6 million people have gotten help through BetterHelp, rated 4.8 out of five on the App Store.",
+      "zh": "超过 600 万人通过 BetterHelp 获得了帮助，该软件在 App Store 中的评分为 4.8 分（满分 5 分）。"
+    },
+    {
+      "start": 313.04,
+      "end": 319.51,
+      "text": "Click the link in the description, or go to betterhelp.com/crowncapital for 10% off your first month of therapy.",
+      "zh": "单击说明中的链接，或访问 betterhelp.com/crowncapital，享受第一个月治疗 10% 的折扣。"
+    },
+    {
+      "start": 319.52,
+      "end": 322.762,
+      "text": "Every great ship needs maintenance.",
+      "zh": "每艘伟大的船舶都需要维护。"
+    },
+    {
+      "start": 322.772,
+      "end": 325.31,
+      "text": "So do you.",
+      "zh": "你也一样。"
+    },
+    {
+      "start": 325.32,
+      "end": 326.87,
+      "text": "Hello.",
+      "zh": "你好。"
+    },
+    {
+      "start": 326.88,
+      "end": 328.83,
+      "text": "The money is coming.",
+      "zh": "钱来了。"
+    },
+    {
+      "start": 328.84,
+      "end": 335.247,
+      "text": "The reason the Sega CEO said yes had nothing to do with business logic.",
+      "zh": "世嘉首席执行官说“是”的原因与商业逻辑无关。"
+    },
+    {
+      "start": 335.257,
+      "end": 336.457,
+      "text": "He just liked Jensen.",
+      "zh": "他只是喜欢Jensen。"
+    },
+    {
+      "start": 335.48,
+      "end": 338.35,
+      "text": "That $5 million bought Nvidia 6 months.",
+      "zh": "这 500 万美元让 Nvidia 获得了 6 个月的时间。"
+    },
+    {
+      "start": 338.36,
+      "end": 344.23,
+      "text": "And now they had one last shot to build the right chip, or go bankrupt.",
+      "zh": "现在他们还有最后一次机会来制造合适的芯片，否则就会破产。"
+    },
+    {
+      "start": 344.24,
+      "end": 351.35,
+      "text": "They called it the Riva 128, triangle-based, DirectX compatible, built from scratch.",
+      "zh": "他们将其称为 Riva 128，基于三角形，兼容 DirectX，从头开始构建。"
+    },
+    {
+      "start": 351.36,
+      "end": 356.294,
+      "text": "Weeks of late nights, bad coffee, and absolutely zero plan B.",
+      "zh": "几周的深夜、糟糕的咖啡和绝对为零的 B 计划。"
+    },
+    {
+      "start": 356.304,
+      "end": 360.99,
+      "text": "They had exactly 1 month of payroll left in the bank to find out if it worked.",
+      "zh": "他们在银行里还剩 1 个月的工资，来看看它是否有效。"
+    },
+    {
+      "start": 361,
+      "end": 366.437,
+      "text": "The chip launched in 1997, and this time Nvidia did not miss.",
+      "zh": "该芯片于 1997 年推出，这次 Nvidia 没有错过。"
+    },
+    {
+      "start": 366.447,
+      "end": 368.904,
+      "text": "Game developers could actually use it.",
+      "zh": "游戏开发者实际上可以使用它。"
+    },
+    {
+      "start": 368.914,
+      "end": 370.881,
+      "text": "Customers actually bought it.",
+      "zh": "顾客确实买了。"
+    },
+    {
+      "start": 370.891,
+      "end": 374.27,
+      "text": "From the brink of bankruptcy to a million units sold in 4 months.",
+      "zh": "从破产边缘到4个月销量100万台。"
+    },
+    {
+      "start": 374.28,
+      "end": 378.47,
+      "text": "Most CEOs would have taken a long vacation and slow down a bit.",
+      "zh": "大多数首席执行官都会休一个长假，放慢脚步。"
+    },
+    {
+      "start": 378.48,
+      "end": 382.39,
+      "text": "He walked back into the office and wrote one word on the whiteboard.",
+      "zh": "他走回办公室，在白板上写下了一个字。"
+    },
+    {
+      "start": 382.4,
+      "end": 384.35,
+      "text": "More.",
+      "zh": "更多的。"
+    },
+    {
+      "start": 384.36,
+      "end": 392.19,
+      "text": "So, by 1999, Nvidia launched the GeForce 256 and gave the world a term it didn't really have yet, GPU.",
+      "zh": "因此，到 1999 年，Nvidia 推出了 GeForce 256，并给了世界一个它还没有真正使用过的术语：GPU。"
+    },
+    {
+      "start": 392.2,
+      "end": 394.27,
+      "text": "Graphics processing unit.",
+      "zh": "图形处理单元。"
+    },
+    {
+      "start": 394.28,
+      "end": 397.355,
+      "text": "It was a genuine leap.",
+      "zh": "这是一次真正的飞跃。"
+    },
+    {
+      "start": 397.365,
+      "end": 401.97,
+      "text": "A chip that handled complex 3D calculations that previously required an entirely separate processor.",
+      "zh": "一种可以处理复杂 3D 计算的芯片，而以前需要完全独立的处理器。"
+    },
+    {
+      "start": 401.98,
+      "end": 410.394,
+      "text": "For gamers, this meant smoother worlds, better lighting, and monsters that looked slightly less like wet cardboard.",
+      "zh": "对于游戏玩家来说，这意味着更平滑的世界、更好的照明以及看起来不太像湿纸板的怪物。"
+    },
+    {
+      "start": 410.404,
+      "end": 411.604,
+      "text": "Gamers loved it.",
+      "zh": "游戏玩家喜欢它。"
+    },
+    {
+      "start": 410.414,
+      "end": 412.03,
+      "text": "Developers wept with joy.",
+      "zh": "开发商喜极而泣。"
+    },
+    {
+      "start": 412.04,
+      "end": 414.868,
+      "text": "Revenue exploded.",
+      "zh": "收入爆炸式增长。"
+    },
+    {
+      "start": 414.878,
+      "end": 418.69,
+      "text": "And by the early 2000s, Nvidia had become the king of PC graphics.",
+      "zh": "到 2000 年代初，Nvidia 已成为 PC 图形领域的王者。"
+    },
+    {
+      "start": 418.7,
+      "end": 424.876,
+      "text": "Every serious gamer, every visual effects studio, every game developer on the planet.",
+      "zh": "地球上每一个认真的游戏玩家、每一个视觉效果工作室、每一个游戏开发人员。"
+    },
+    {
+      "start": 424.886,
+      "end": 426.191,
+      "text": "The obvious move was simple.",
+      "zh": "显而易见的举动很简单。"
+    },
+    {
+      "start": 426.201,
+      "end": 431.909,
+      "text": "Keep making better gaming chips, sell them to gamers, become rich, buy a very large leather jacket museum.",
+      "zh": "不断制造更好的游戏芯片，把它们卖给游戏玩家，变得富有，买一个非常大的皮夹克博物馆。"
+    },
+    {
+      "start": 431.919,
+      "end": 435.19,
+      "text": "But Jensen started looking at something other people missed.",
+      "zh": "但詹森开始关注其他人错过的东西。"
+    },
+    {
+      "start": 435.2,
+      "end": 441.59,
+      "text": "A CPU is like one very smart employee doing tasks one by one extremely fast.",
+      "zh": "CPU 就像一位非常聪明的员工，非常快速地一项一项地执行任务。"
+    },
+    {
+      "start": 441.6,
+      "end": 446.75,
+      "text": "Meanwhile, a GPU is like 10,000 interns doing tiny calculations at once.",
+      "zh": "与此同时，GPU 就像 10,000 名实习生同时进行微小的计算。"
+    },
+    {
+      "start": 446.76,
+      "end": 448.51,
+      "text": "Are the interns smart?",
+      "zh": "实习生聪明吗？"
+    },
+    {
+      "start": 448.52,
+      "end": 449.72,
+      "text": "No.",
+      "zh": "不。"
+    },
+    {
+      "start": 449.56,
+      "end": 455.79,
+      "text": "But there are a lot of them, and if your problem can be broken into thousands of small calculations, physics, chemistry,",
+      "zh": "但它们有很多，如果你的问题可以分解成数千个小的计算，物理，化学，"
+    },
+    {
+      "start": 455.8,
+      "end": 465.35,
+      "text": "weather, biology, artificial intelligence, suddenly, the chip built for video games starts looking like something else, a cheap supercomputer.",
+      "zh": "天气、生物学、人工智能，突然之间，为视频游戏构建的芯片开始看起来像别的东西，一台廉价的超级计算机。"
+    },
+    {
+      "start": 465.36,
+      "end": 470.95,
+      "text": "Jensen looked at this and thought, \"What if the same chip that rendered explosions in video games could help",
+      "zh": "Jensen 看着这个并想：“如果在视频游戏中渲染爆炸的同一个芯片可以提供帮助，那会怎么样？"
+    },
+    {
+      "start": 470.96,
+      "end": 477.27,
+      "text": "simulate molecules, predict weather, model fluids, and maybe one day train machines to think?\"",
+      "zh": "模拟分子、预测天气、模拟流体，也许有一天可以训练机器思考？”"
+    },
+    {
+      "start": 477.28,
+      "end": 487.15,
+      "text": "So, in 2006, Nvidia launched CUDA, Compute Unified Device Architecture, a platform that let scientists, researchers, and engineers use Nvidia",
+      "zh": "因此，2006 年，Nvidia 推出了 CUDA（统一计算设备架构），这是一个让科学家、研究人员和工程师使用 Nvidia 的平台"
+    },
+    {
+      "start": 487.16,
+      "end": 489.99,
+      "text": "GPUs for general-purpose computing.",
+      "zh": "用于通用计算的 GPU。"
+    },
+    {
+      "start": 490,
+      "end": 494.75,
+      "text": "And then, he committed roughly $500 million to build it.",
+      "zh": "然后，他投入了大约 5 亿美元来建造它。"
+    },
+    {
+      "start": 494.76,
+      "end": 498.51,
+      "text": "Jensen, the gaming business is printing money.",
+      "zh": "詹森，游戏业正在印钱。"
+    },
+    {
+      "start": 498.52,
+      "end": 501.39,
+      "text": "Walk me through who CUDA is actually for.",
+      "zh": "让我了解 CUDA 到底是为谁服务的。"
+    },
+    {
+      "start": 501.4,
+      "end": 508.31,
+      "text": "Researchers, scientists, people running fluid dynamics simulations, climate models, drug discovery?",
+      "zh": "研究人员、科学家、进行流体动力学模拟、气候模型、药物发现的人员？"
+    },
+    {
+      "start": 508.32,
+      "end": 510.79,
+      "text": "So, not our customers.",
+      "zh": "所以，不是我们的客户。"
+    },
+    {
+      "start": 510.8,
+      "end": 512.07,
+      "text": "Not yet.",
+      "zh": "还没有。"
+    },
+    {
+      "start": 512.08,
+      "end": 516.078,
+      "text": "I'm starting to hate that phrase.",
+      "zh": "我开始讨厌这句话了。"
+    },
+    {
+      "start": 516.088,
+      "end": 517.669,
+      "text": "This is our CUDA revenue after 2 years.",
+      "zh": "这是我们 2 年后的 CUDA 收入。"
+    },
+    {
+      "start": 517.679,
+      "end": 518.879,
+      "text": "Do you see a number?",
+      "zh": "你看到一个数字吗？"
+    },
+    {
+      "start": 517.88,
+      "end": 519.27,
+      "text": "Not today.",
+      "zh": "不是今天。"
+    },
+    {
+      "start": 519.28,
+      "end": 524.121,
+      "text": "Jensen, this is not a business.",
+      "zh": "詹森，这不是生意。"
+    },
+    {
+      "start": 524.131,
+      "end": 525.331,
+      "text": "We are subsidizing a hobby for PhD students.",
+      "zh": "我们正在资助博士生的一项爱好。"
+    },
+    {
+      "start": 525.04,
+      "end": 528.038,
+      "text": "PhD students are where the future starts.",
+      "zh": "博士生是未来的起点。"
+    },
+    {
+      "start": 528.048,
+      "end": 531.91,
+      "text": "For the first time, they can use a gaming chip like a supercomputer.",
+      "zh": "他们第一次可以像超级计算机一样使用游戏芯片。"
+    },
+    {
+      "start": 531.92,
+      "end": 533.804,
+      "text": "We don't know what they'll build with it.",
+      "zh": "我们不知道他们会用它建造什么。"
+    },
+    {
+      "start": 533.814,
+      "end": 536.91,
+      "text": "But when they build something important, it will run on us.",
+      "zh": "但当他们打造出重要的东西时，它就会依赖我们。"
+    },
+    {
+      "start": 536.92,
+      "end": 544.246,
+      "text": "If they build nothing, we still have the best gaming cards in the world and a $500 million science project.",
+      "zh": "即使他们什么也不做，我们仍然拥有世界上最好的游戏卡和价值 5 亿美元的科学项目。"
+    },
+    {
+      "start": 544.256,
+      "end": 546.43,
+      "text": "We've survived worse.",
+      "zh": "我们经历过更糟糕的情况。"
+    },
+    {
+      "start": 546.44,
+      "end": 548.648,
+      "text": "Six years passed.",
+      "zh": "六年过去了。"
+    },
+    {
+      "start": 548.658,
+      "end": 550.627,
+      "text": "The gaming business kept printing money.",
+      "zh": "博彩业不断印钞。"
+    },
+    {
+      "start": 550.637,
+      "end": 552.27,
+      "text": "CUDA kept printing almost nothing.",
+      "zh": "CUDA 几乎没有打印任何内容。"
+    },
+    {
+      "start": 552.28,
+      "end": 556.15,
+      "text": "And Jensen kept waiting for the problem big enough to prove him right.",
+      "zh": "Jensen 一直在等待问题大到足以证明他是对的。"
+    },
+    {
+      "start": 556.16,
+      "end": 560.19,
+      "text": "Then, in Toronto, someone found it.",
+      "zh": "然后，在多伦多，有人发现了它。"
+    },
+    {
+      "start": 560.2,
+      "end": 561.468,
+      "text": "It's 2012.",
+      "zh": "现在是 2012 年。"
+    },
+    {
+      "start": 561.478,
+      "end": 568.023,
+      "text": "Every year, the world's top AI researchers compete in a challenge called ImageNet.",
+      "zh": "每年，世界顶尖的人工智能研究人员都会参加一项名为 ImageNet 的挑战赛。"
+    },
+    {
+      "start": 568.033,
+      "end": 571.59,
+      "text": "Tens of millions of images, and your software has to identify what's in them.",
+      "zh": "数千万张图像，您的软件必须识别其中的内容。"
+    },
+    {
+      "start": 571.6,
+      "end": 574.79,
+      "text": "You see the Toronto submission?",
+      "zh": "你看到多伦多提交的材料了吗？"
+    },
+    {
+      "start": 574.8,
+      "end": 577.56,
+      "text": "Some PhD student who running a a network on gaming cards.",
+      "zh": "一些在游戏卡上运行网络的博士生。"
+    },
+    {
+      "start": 577.57,
+      "end": 580.525,
+      "text": "We've been hand-coding classifiers for a decade.",
+      "zh": "十年来我们一直在手工编码分类器。"
+    },
+    {
+      "start": 580.535,
+      "end": 581.75,
+      "text": "Gaming cards aren't going to crack this.",
+      "zh": "游戏卡无法破解这个问题。"
+    },
+    {
+      "start": 581.76,
+      "end": 584.39,
+      "text": "Ladies and gentlemen, thank you for waiting.",
+      "zh": "女士们先生们，谢谢你们的等待。"
+    },
+    {
+      "start": 584.4,
+      "end": 588.027,
+      "text": "The ImageNet 2012 results are final.",
+      "zh": "ImageNet 2012 结果为最终结果。"
+    },
+    {
+      "start": 588.037,
+      "end": 593.02,
+      "text": "Second place, University of Tokyo with a 26.2% error rate.",
+      "zh": "第二名是东京大学，错误率为26.2%。"
+    },
+    {
+      "start": 593.03,
+      "end": 598.99,
+      "text": "And this year's winner, University of Toronto, AlexNet, 15.3%.",
+      "zh": "今年的冠军是多伦多大学 AlexNet，得票率 15.3%。"
+    },
+    {
+      "start": 599,
+      "end": 600.83,
+      "text": "I'm sorry, 15?",
+      "zh": "对不起，15岁？"
+    },
+    {
+      "start": 600.84,
+      "end": 603.062,
+      "text": "That's not a win.",
+      "zh": "那不是胜利。"
+    },
+    {
+      "start": 603.072,
+      "end": 604.272,
+      "text": "That's a murder scene.",
+      "zh": "那是一个谋杀现场。"
+    },
+    {
+      "start": 603.92,
+      "end": 610.35,
+      "text": "For years, researchers have been trying to teach computers how to see by manually designing the features they should look for.",
+      "zh": "多年来，研究人员一直试图通过手动设计计算机应该寻找的功能来教会计算机如何观察。"
+    },
+    {
+      "start": 610.36,
+      "end": 614.43,
+      "text": "Edges, textures, shapes, patterns.",
+      "zh": "边缘、纹理、形状、图案。"
+    },
+    {
+      "start": 614.44,
+      "end": 618.023,
+      "text": "AlexNet took a different path.",
+      "zh": "AlexNet 走了一条不同的道路。"
+    },
+    {
+      "start": 618.033,
+      "end": 624.31,
+      "text": "Give the neural network enough data, enough layers, and enough computing power, and let it learn the features itself.",
+      "zh": "给神经网络足够的数据、足够的层、足够的计算能力，让它自己学习特征。"
+    },
+    {
+      "start": 624.32,
+      "end": 629.95,
+      "text": "Training a neural network requires millions of small calculations happening at the same time.",
+      "zh": "训练神经网络需要同时进行数百万次小型计算。"
+    },
+    {
+      "start": 629.96,
+      "end": 635.11,
+      "text": "Exactly the kind of work that Nvidia had been quietly perfecting for 6 years.",
+      "zh": "这正是 Nvidia 六年来默默完善的工作。"
+    },
+    {
+      "start": 635.12,
+      "end": 638.79,
+      "text": "The $500 million bet had finally found its customer.",
+      "zh": "5亿美元的赌注终于找到了客户。"
+    },
+    {
+      "start": 638.8,
+      "end": 643.742,
+      "text": "Suddenly, every major AI lab started paying attention.",
+      "zh": "突然间，各大人工智能实验室都开始关注。"
+    },
+    {
+      "start": 643.752,
+      "end": 647.35,
+      "text": "Stanford, MIT, Google, Meta, Microsoft.",
+      "zh": "斯坦福大学、麻省理工学院、谷歌、Meta、微软。"
+    },
+    {
+      "start": 647.36,
+      "end": 650.39,
+      "text": "They weren't just buying graphics cards anymore.",
+      "zh": "他们不再只是购买显卡。"
+    },
+    {
+      "start": 650.4,
+      "end": 653.47,
+      "text": "They were buying computing power for intelligence itself.",
+      "zh": "他们购买计算能力是为了情报本身。"
+    },
+    {
+      "start": 653.48,
+      "end": 658.35,
+      "text": "And Nvidia had the hardware, the software, and the scale to deliver it.",
+      "zh": "英伟达拥有交付它的硬件、软件和规模。"
+    },
+    {
+      "start": 658.36,
+      "end": 665.23,
+      "text": "Great news for Nvidia, until in 2022, Washington made a phone call.",
+      "zh": "对于 Nvidia 来说这是个好消息，直到 2022 年，华盛顿才打来电话。"
+    },
+    {
+      "start": 665.24,
+      "end": 669.753,
+      "text": "Before Washington called, Jensen had already tried to fix Nvidia's biggest weakness.",
+      "zh": "在华盛顿打电话之前，詹森已经试图解决英伟达最大的弱点。"
+    },
+    {
+      "start": 669.763,
+      "end": 673.67,
+      "text": "Because Nvidia designed the chips, but it didn't make them.",
+      "zh": "因为英伟达设计了芯片，但不是制造芯片。"
+    },
+    {
+      "start": 673.68,
+      "end": 677.51,
+      "text": "That job belonged mostly to TSMC in Taiwan.",
+      "zh": "这项工作主要属于台湾的台积电。"
+    },
+    {
+      "start": 677.52,
+      "end": 684.27,
+      "text": "And he didn't own the underlying architecture, the fundamental instruction set that tells processors how to think.",
+      "zh": "而且他并不拥有底层架构，即告诉处理器如何思考的基本指令集。"
+    },
+    {
+      "start": 684.28,
+      "end": 687.07,
+      "text": "That belonged to a British company called ARM.",
+      "zh": "那属于一家名为 ARM 的英国公司。"
+    },
+    {
+      "start": 687.08,
+      "end": 691.91,
+      "text": "A company whose technology sat inside virtually every smartphone on Earth.",
+      "zh": "这家公司的技术几乎渗透到地球上每部智能手机中。"
+    },
+    {
+      "start": 691.92,
+      "end": 695.71,
+      "text": "Apple, Samsung, Qualcomm, your pocket.",
+      "zh": "苹果、三星、高通，你的口袋。"
+    },
+    {
+      "start": 695.72,
+      "end": 698.27,
+      "text": "Their DNA, not Jensen's.",
+      "zh": "他们的 DNA，而不是 Jensen 的。"
+    },
+    {
+      "start": 698.28,
+      "end": 702.07,
+      "text": "So, for all of Nvidia's power, Jensen was still renting the building.",
+      "zh": "因此，尽管英伟达竭尽全力，詹森仍然租用这栋大楼。"
+    },
+    {
+      "start": 702.08,
+      "end": 703.83,
+      "text": "He owned the furniture.",
+      "zh": "他拥有这些家具。"
+    },
+    {
+      "start": 703.84,
+      "end": 707.444,
+      "text": "So, in 2020, Jensen made his move.",
+      "zh": "于是，2020 年，Jensen 采取了行动。"
+    },
+    {
+      "start": 707.454,
+      "end": 709.55,
+      "text": "Nvidia offered $40 to buy ARM.",
+      "zh": "Nvidia 出价 40 美元收购 ARM。"
+    },
+    {
+      "start": 709.56,
+      "end": 714.55,
+      "text": "Own the GPU, own the software, own the architecture.",
+      "zh": "拥有 GPU、拥有软件、拥有架构。"
+    },
+    {
+      "start": 714.56,
+      "end": 715.76,
+      "text": "Simple.",
+      "zh": "简单的。"
+    },
+    {
+      "start": 714.57,
+      "end": 717.07,
+      "text": "Unless you were literally everyone else in tech.",
+      "zh": "除非你实际上是科技界的其他人。"
+    },
+    {
+      "start": 717.08,
+      "end": 719.443,
+      "text": "Nvidia cannot own ARM.",
+      "zh": "Nvidia 不能拥有 ARM。"
+    },
+    {
+      "start": 719.453,
+      "end": 720.653,
+      "text": "Agreed.",
+      "zh": "同意。"
+    },
+    {
+      "start": 720.278,
+      "end": 721.478,
+      "text": "Agreed.",
+      "zh": "同意。"
+    },
+    {
+      "start": 720.288,
+      "end": 721.488,
+      "text": "Also agreed.",
+      "zh": "也同意了。"
+    },
+    {
+      "start": 721,
+      "end": 725.206,
+      "text": "Wow, I hate how united we are.",
+      "zh": "哇，我讨厌我们如此团结。"
+    },
+    {
+      "start": 725.216,
+      "end": 728.43,
+      "text": "If Jensen owns ARM, then every chip we build runs through our most dangerous competitor.",
+      "zh": "如果 Jensen 拥有 ARM，那么我们制造的每一个芯片都会经过我们最危险的竞争对手。"
+    },
+    {
+      "start": 728.44,
+      "end": 732.679,
+      "text": "Phones, servers, AI chips, everything.",
+      "zh": "电话、服务器、人工智能芯片，一切。"
+    },
+    {
+      "start": 732.689,
+      "end": 733.889,
+      "text": "So, what do we do?",
+      "zh": "那么，我们该怎么办？"
+    },
+    {
+      "start": 733.6,
+      "end": 737.23,
+      "text": "We complain to every regulator with an email address.",
+      "zh": "我们通过电子邮件地址向每个监管机构投诉。"
+    },
+    {
+      "start": 737.24,
+      "end": 739.12,
+      "text": "And they did.",
+      "zh": "他们做到了。"
+    },
+    {
+      "start": 739.13,
+      "end": 741.01,
+      "text": "The FTC sued.",
+      "zh": "联邦贸易委员会提起诉讼。"
+    },
+    {
+      "start": 741.02,
+      "end": 743.148,
+      "text": "The European Commission investigated.",
+      "zh": "欧盟委员会对此进行了调查。"
+    },
+    {
+      "start": 743.158,
+      "end": 744.67,
+      "text": "The UK blocked it on national security grounds.",
+      "zh": "英国以国家安全为由予以阻止。"
+    },
+    {
+      "start": 744.68,
+      "end": 747.39,
+      "text": "18 months later, Nvidia walked away.",
+      "zh": "18 个月后，Nvidia 离开了。"
+    },
+    {
+      "start": 747.4,
+      "end": 751.032,
+      "text": "Then Washington called.",
+      "zh": "然后华盛顿打来电话。"
+    },
+    {
+      "start": 751.042,
+      "end": 752.242,
+      "text": "Mr.",
+      "zh": "先生。"
+    },
+    {
+      "start": 751.649,
+      "end": 757.31,
+      "text": "Huang, effective immediately, advanced AI chips, the H100, can no longer be exported to China.",
+      "zh": "黄先生，即日起，先进的人工智能芯片H100将不再出口到中国。"
+    },
+    {
+      "start": 757.32,
+      "end": 759.31,
+      "text": "How much revenue are we talking about?",
+      "zh": "我们谈论的是多少收入？"
+    },
+    {
+      "start": 759.32,
+      "end": 761.43,
+      "text": "That sounds like a you problem.",
+      "zh": "这听起来像是你的问题。"
+    },
+    {
+      "start": 761.44,
+      "end": 765.19,
+      "text": "Just like that, some of Nvidia's biggest customers were cut off.",
+      "zh": "就这样，英伟达的一些最大客户被切断了联系。"
+    },
+    {
+      "start": 765.2,
+      "end": 771.43,
+      "text": "Alibaba, Baidu, ByteDance, China's AI companies, gone.",
+      "zh": "阿里巴巴、百度、字节跳动，中国的人工智能公司，没了。"
+    },
+    {
+      "start": 771.44,
+      "end": 773.91,
+      "text": "So, Nvidia did what Nvidia always did.",
+      "zh": "因此，Nvidia 做了 Nvidia 一贯做的事情。"
+    },
+    {
+      "start": 773.92,
+      "end": 776.03,
+      "text": "It engineered around the problem.",
+      "zh": "它围绕这个问题进行设计。"
+    },
+    {
+      "start": 776.04,
+      "end": 781.35,
+      "text": "They built a weaker version, the H800, designed to fit inside the rules.",
+      "zh": "他们构建了一个较弱的版本 H800，旨在符合规则。"
+    },
+    {
+      "start": 781.36,
+      "end": 783.276,
+      "text": "Legal enough to ship.",
+      "zh": "足够合法，可以运输。"
+    },
+    {
+      "start": 783.286,
+      "end": 784.59,
+      "text": "Powerful enough to sell.",
+      "zh": "实力够强就可以卖。"
+    },
+    {
+      "start": 784.6,
+      "end": 789.87,
+      "text": "For about 5 minutes, because by late 2023, Washington tightened the rules again.",
+      "zh": "大约5分钟，因为到2023年底，华盛顿再次收紧了规则。"
+    },
+    {
+      "start": 789.88,
+      "end": 794.936,
+      "text": "The H800 was restricted to The message was clear.",
+      "zh": "H800 仅限于该信息很明确。"
+    },
+    {
+      "start": 794.946,
+      "end": 798.35,
+      "text": "Nvidia was now a strategic weapon in America's technology war with China.",
+      "zh": "英伟达现在已成为美国与中国科技战中的战略武器。"
+    },
+    {
+      "start": 798.36,
+      "end": 802.396,
+      "text": "Jensen wasn't just a CEO anymore.",
+      "zh": "詹森不再只是一名首席执行官。"
+    },
+    {
+      "start": 802.406,
+      "end": 805.87,
+      "text": "He was a piece on someone else's chessboard, moved by people he couldn't negotiate with.",
+      "zh": "他是别人棋盘上的一颗棋子，被他无法与之谈判的人所感动。"
+    },
+    {
+      "start": 805.88,
+      "end": 810.883,
+      "text": "But while politics got messier, demand got insane.",
+      "zh": "但当政治变得更加混乱时，需求却变得疯狂。"
+    },
+    {
+      "start": 810.893,
+      "end": 815.415,
+      "text": "OpenAI, Google, Anthropic, xAI, Microsoft.",
+      "zh": "OpenAI、谷歌、Anthropic、xAI、微软。"
+    },
+    {
+      "start": 815.425,
+      "end": 824.07,
+      "text": "Everyone building large AI models needed the same thing, more Nvidia chips, more data centers, more power, more cooling, more everything.",
+      "zh": "每个构建大型人工智能模型的人都需要同样的东西，更多的 Nvidia 芯片、更多的数据中心、更多的电力、更多的冷却，以及更多的一切。"
+    },
+    {
+      "start": 824.08,
+      "end": 830.07,
+      "text": "Blackwell, Nvidia's next generation chip, was being ordered before factories could even finish making it.",
+      "zh": "Nvidia 的下一代芯片 Blackwell 在工厂完成生产之前就已被订购。"
+    },
+    {
+      "start": 830.08,
+      "end": 834.87,
+      "text": "By October 2025, Nvidia crossed $5 trillion in market value.",
+      "zh": "到 2025 年 10 月，Nvidia 市值突破 5 万亿美元。"
+    },
+    {
+      "start": 834.88,
+      "end": 839.79,
+      "text": "The most valuable company on Earth, ahead of Google, ahead of Apple.",
+      "zh": "地球上最有价值的公司，领先于谷歌，领先于苹果。"
+    },
+    {
+      "start": 839.8,
+      "end": 844.35,
+      "text": "Not bad for a company that once had 30 days of cash left and one very wrong chip.",
+      "zh": "对于一家曾经只剩下 30 天现金和一个非常错误的芯片的公司来说，这还算不错。"
+    },
+    {
+      "start": 844.36,
+      "end": 846.43,
+      "text": "None of it was supposed to work.",
+      "zh": "这些都不应该起作用。"
+    },
+    {
+      "start": 846.44,
+      "end": 851.51,
+      "text": "Every single bet looked insane from the outside, and every single one paid off.",
+      "zh": "从表面上看，每一个赌注都看起来很疯狂，但每一个赌注都得到了回报。"
+    },
+    {
+      "start": 851.52,
+      "end": 858.8,
+      "text": "As what he himself said, \"My will to survive exceeds everybody else's will to kill me.\"",
+      "zh": "正如他自己所说：“我求生的意志超过了其他人杀我的意志。”"
+    }
+  ],
+  "translationPreparedAt": "2026-09-20T15:59:04.9251715Z",
+  "translatedCueCount": 243
+}

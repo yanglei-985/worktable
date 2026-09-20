@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080d14" />
+    <title>Context — Video Language Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-variant="A">
+    <main id="app">
+      <section id="importScreen" class="screen import-screen" aria-labelledby="heroTitle">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+
+        <header class="landing-header">
+          <a class="brand" href="#" aria-label="Context home">
+            <span class="brand-mark" aria-hidden="true">C</span>
+            <span>Context</span>
+          </a>
+          <span class="prototype-tag">Mobile demo</span>
+        </header>
+
+        <div class="hero">
+          <p class="eyebrow"><span></span> Learn inside the moment</p>
+          <h1 id="heroTitle">Paste a video.<br /><em>Understand the line.</em></h1>
+          <p class="hero-copy">
+            Watch normally in English. Tap only when a word or phrase needs context.
+          </p>
+
+          <form id="linkForm" class="link-form" novalidate>
+            <label for="videoUrl">Video link</label>
+            <div class="url-control">
+              <span class="link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M10.2 13.8a4 4 0 0 0 5.66 0l2.82-2.82a4 4 0 1 0-5.66-5.66l-1.61 1.61M13.8 10.2a4 4 0 0 0-5.66 0l-2.82 2.82a4 4 0 0 0 5.66 5.66l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <input id="videoUrl" name="videoUrl" type="url" inputmode="url" autocomplete="url" value="https://youtu.be/1GowFTjbUnk" placeholder="Paste YouTube or video URL" aria-describedby="urlHint" />
+              <button type="submit" class="open-button">
+                <span>Open video</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <p id="formError" class="form-error" role="alert"></p>
+          </form>
+
+          <button id="demoButton" class="demo-button" type="button">
+            <span class="demo-play" aria-hidden="true">▶</span>
+            Study the NVIDIA video
+          </button>
+          <p id="urlHint" class="support-note">This video is ready with its original English captions. Other links still require a caption-ingestion backend.</p>
+        </div>
+
+        <div class="interaction-preview" aria-hidden="true">
+          <div class="preview-caption">
+            <span>Once you</span>
+            <strong>get the hang of it</strong>
+            <span>, it feels natural.</span>
+          </div>
+          <div class="preview-answer">
+            <small>Phrase · in this context</small>
+            <b>掌握窍门；逐渐上手</b>
+          </div>
+        </div>
+      </section>
+
+      <section id="loadingScreen" class="screen loading-screen" hidden aria-live="polite">
+        <div class="loader-orbit"><span></span><i></i></div>
+        <p class="eyebrow"><span></span> Preparing your video</p>
+        <h2 id="loadingTitle">Opening the source…</h2>
+        <p id="loadingStatus">Checking the video link</p>
+        <div class="progress-track"><span id="loadingProgress"></span></div>
+      </section>
+
+      <section id="playerScreen" class="screen player-screen" hidden>
+        <header class="player-header">
+          <button id="backButton" class="icon-button" type="button" aria-label="Paste another link">
+            <svg viewBox="0 0 24 24" fill="none"><path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <a class="brand compact" href="#" aria-label="Context home">
+            <span class="brand-mark" aria-hidden="true">C</span>
+            <span>Context</span>
+          </a>
+          <div id="sourceBadge" class="source-badge">YouTube · Crayon Capital</div>
+        </header>
+
+        <div class="player-layout">
+          <div class="video-column">
+            <div id="videoStage" class="video-stage">
+              <video id="video" controls playsinline preload="metadata" src="sample/lesson.mp4"></video>
+              <div id="youtubePlayer" class="youtube-player" hidden aria-label="Embedded YouTube video player"></div>
+
+              <div id="captionLayer" class="caption-layer" aria-live="polite">
+                <div class="caption-meta">
+                  <span>English</span>
+                  <button id="sentenceButton" type="button">Explain full line</button>
+                </div>
+                <div id="captionText" class="caption-text"></div>
+                <p class="tap-hint">Tap a highlighted phrase or any word</p>
+              </div>
+            </div>
+
+            <div class="player-foot">
+              <div>
+                <p class="lesson-kicker">Now playing</p>
+                <h2 id="lessonTitle">NVIDIA Explained Like You're 5</h2>
+              </div>
+              <p id="timeReadout" class="time-readout">00:00 / 00:30</p>
+            </div>
+          </div>
+
+          <aside class="context-rail" aria-label="Current subtitle context">
+            <p class="rail-label">Current line</p>
+            <p id="railCurrent" class="rail-current"></p>
+            <p class="rail-label next-label">Coming next</p>
+            <p id="railNext" class="rail-next"></p>
+          </aside>
+        </div>
+
+        <div id="prototypeState" class="prototype-state" hidden></div>
+      </section>
+    </main>
+
+    <div id="sheetBackdrop" class="sheet-backdrop" hidden></div>
+    <section id="explanationSheet" class="explanation-sheet" role="dialog" aria-modal="true" aria-labelledby="selectionTitle" hidden>
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <header class="sheet-header">
+        <div>
+          <p id="selectionType" class="selection-type">Phrase · in this context</p>
+          <h2 id="selectionTitle">get the hang of it</h2>
+        </div>
+        <button id="closeSheet" class="icon-button sheet-close" type="button" aria-label="Close explanation">
+          <svg viewBox="0 0 24 24" fill="none"><path d="m7 7 10 10M17 7 7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+
+      <div id="explanationLoading" class="explanation-loading">
+        <span></span><span></span><span></span>
+        <p>Reading the surrounding sentence…</p>
+      </div>
+
+      <div id="explanationContent" class="explanation-content" hidden>
+        <div class="translation-row">
+          <span class="translation-label">Natural Chinese</span>
+          <strong id="translationText">掌握窍门；逐渐上手</strong>
+        </div>
+        <div class="context-block">
+          <span>Meaning here</span>
+          <p id="meaningText"></p>
+        </div>
+        <div class="context-block soft">
+          <span>Why this phrasing</span>
+          <p id="patternText"></p>
+        </div>
+        <div class="source-context">
+          <span>From the video</span>
+          <p id="sourceText"></p>
+        </div>
+        <div class="sheet-actions">
+          <button id="replayButton" class="replay-button" type="button">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 0 2.34-5.66L4 8.67M4 4v4.67h4.67" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Replay line
+          </button>
+          <span id="responseTime" class="response-time">Demo AI · 0.4s</span>
+        </div>
+      </div>
+    </section>
+
+    <nav id="variantSwitcher" class="variant-switcher" aria-label="Prototype variant switcher" hidden>
+      <button id="prevVariant" type="button" aria-label="Previous design">←</button>
+      <span id="variantLabel">A · Immersive</span>
+      <button id="nextVariant" type="button" aria-label="Next design">→</button>
+    </nav>
+
+    <div id="toast" class="toast" role="status" hidden></div>
+    <script src="app.js"></script>
+  </body>
+</html>
