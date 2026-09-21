@@ -180,6 +180,73 @@ const WORDS = {
   restricted: ["受到限制的；被管制的", "The chip could no longer be exported under the tightened rules.", "“Restricted to / restricted from” describes a formal limitation."]
 };
 
+const CET6_DICTIONARY = {
+  empire: { level: "CET-6", pos: "noun", collocation: "build an empire", example: "He built an empire from a small idea." },
+  pitched: { level: "CET-6", pos: "verb", collocation: "pitch a business plan", example: "She pitched the plan to three investors." },
+  gamble: { level: "CET-6", pos: "noun", collocation: "take a gamble", example: "Starting a company was a huge gamble." },
+  industries: { level: "CET-6", pos: "noun", collocation: "entire industries", example: "New technology can transform entire industries." },
+  algorithms: { level: "CET-6", pos: "noun", collocation: "search algorithms", example: "Recommendation algorithms learn from user behavior." },
+  adapt: { level: "CET-6", pos: "verb", collocation: "adapt to change", example: "Good teams adapt to change quickly." },
+  discipline: { level: "CET-6", pos: "noun", collocation: "self-discipline", example: "Learning a language takes discipline." },
+  complain: { level: "CET-6", pos: "verb", collocation: "complain about work", example: "He rarely complains about difficult work." },
+  institute: { level: "CET-6", pos: "noun", collocation: "research institute", example: "The institute studies computer science." },
+  origin: { level: "CET-6", pos: "noun", collocation: "origin story", example: "Every founder has an origin story." },
+  lecture: { level: "CET-6", pos: "noun", collocation: "lecture hall", example: "The idea was tested outside the lecture hall." },
+  semiconductors: { level: "CET-6", pos: "noun", collocation: "semiconductor industry", example: "Semiconductors power modern devices." },
+  obsession: { level: "CET-6", pos: "noun", collocation: "a level of obsession", example: "Her obsession with detail improved the design." },
+  ambitious: { level: "CET-6", pos: "adjective", collocation: "ambitious plan", example: "They announced an ambitious plan for growth." },
+  universal: { level: "CET-6", pos: "adjective", collocation: "universal standard", example: "The team wanted a universal standard." },
+  hardware: { level: "CET-6", pos: "noun", collocation: "computer hardware", example: "The software needs faster hardware." },
+  launched: { level: "CET-6", pos: "verb", collocation: "launch a product", example: "The company launched a new product." },
+  published: { level: "CET-6", pos: "verb", collocation: "publish a specification", example: "The organization published a new standard." },
+  pipeline: { level: "CET-6", pos: "noun", collocation: "rendering pipeline", example: "The graphics pipeline processes each frame." },
+  quadratic: { level: "CET-6", pos: "adjective", collocation: "quadratic mapping", example: "The old chip used quadratic mapping." },
+  tremendous: { level: "CET-6", pos: "adjective", collocation: "tremendous confidence", example: "They moved forward with tremendous confidence." },
+  flopped: { level: "CET-6", pos: "verb", collocation: "a product flops", example: "The first version flopped in the market." },
+  lifeline: { level: "CET-6", pos: "noun", collocation: "financial lifeline", example: "The contract became a financial lifeline." },
+  contracted: { level: "CET-6", pos: "verb", collocation: "contract a supplier", example: "The company contracted a chip designer." },
+  generation: { level: "CET-6", pos: "noun", collocation: "next generation", example: "The next generation will be more efficient." },
+  vaporize: { level: "CET-6", pos: "verb", collocation: "vaporize overnight", example: "The cash could vaporize overnight." },
+  investment: { level: "CET-6", pos: "noun", collocation: "make an investment", example: "The investment gave the team more time." },
+  anxiety: { level: "CET-6", pos: "noun", collocation: "anxiety about the outcome", example: "Uncertainty can create anxiety." },
+  outcome: { level: "CET-6", pos: "noun", collocation: "possible outcome", example: "We cannot control every outcome." },
+  reframe: { level: "CET-6", pos: "verb", collocation: "reframe a problem", example: "She reframed the problem as a learning task." },
+  therapist: { level: "CET-6", pos: "noun", collocation: "credentialed therapist", example: "He spoke with a therapist about stress." },
+  credential: { level: "CET-6", pos: "noun", collocation: "professional credential", example: "Check the therapist's credentials." },
+  maintenance: { level: "CET-6", pos: "noun", collocation: "regular maintenance", example: "Every complex system needs maintenance." },
+  payroll: { level: "CET-6", pos: "noun", collocation: "monthly payroll", example: "The company had one month of payroll left." },
+  bankruptcy: { level: "CET-6", pos: "noun", collocation: "the brink of bankruptcy", example: "The business was near bankruptcy." },
+  revenue: { level: "CET-6", pos: "noun", collocation: "annual revenue", example: "Revenue grew after the launch." },
+  processor: { level: "CET-6", pos: "noun", collocation: "graphics processor", example: "The processor handles many calculations." },
+  calculations: { level: "CET-6", pos: "noun", collocation: "complex calculations", example: "The GPU runs small calculations in parallel." },
+  artificial: { level: "CET-6", pos: "adjective", collocation: "artificial intelligence", example: "Artificial intelligence needs a lot of computing power." },
+  intelligence: { level: "CET-6", pos: "noun", collocation: "artificial intelligence", example: "The company builds tools for intelligence research." },
+  simulate: { level: "CET-6", pos: "verb", collocation: "simulate weather", example: "Scientists simulate weather with powerful computers." },
+  molecules: { level: "CET-6", pos: "noun", collocation: "model molecules", example: "The model can help researchers study molecules." },
+  climate: { level: "CET-6", pos: "noun", collocation: "climate model", example: "A climate model requires many calculations." },
+  architecture: { level: "CET-6", pos: "noun", collocation: "chip architecture", example: "The new architecture uses less energy." },
+  researchers: { level: "CET-6", pos: "noun", collocation: "AI researchers", example: "Researchers tested the system on images." },
+  subsidizing: { level: "CET-6", pos: "verb", collocation: "subsidize research", example: "The company kept subsidizing the research." },
+  classifiers: { level: "CET-6", pos: "noun", collocation: "image classifiers", example: "Earlier classifiers needed hand-coded features." },
+  features: { level: "CET-6", pos: "noun", collocation: "learn features", example: "The network learns useful features from data." },
+  neural: { level: "CET-6", pos: "adjective", collocation: "neural network", example: "A neural network can learn patterns." },
+  network: { level: "CET-6", pos: "noun", collocation: "neural network", example: "The network needs data and computing power." },
+  dominant: { level: "CET-6", pos: "adjective", collocation: "dominant position", example: "The company holds a dominant position." },
+  strategic: { level: "CET-6", pos: "adjective", collocation: "strategic weapon", example: "The technology became a strategic asset." },
+  underlying: { level: "CET-6", pos: "adjective", collocation: "underlying architecture", example: "The underlying architecture controls the system." },
+  instruction: { level: "CET-6", pos: "noun", collocation: "instruction set", example: "The instruction set tells the processor what to do." },
+  competitor: { level: "CET-6", pos: "noun", collocation: "dangerous competitor", example: "The company faced a powerful competitor." },
+  regulator: { level: "CET-6", pos: "noun", collocation: "government regulator", example: "A regulator investigated the acquisition." },
+  exported: { level: "CET-6", pos: "verb", collocation: "export a chip", example: "Some chips could no longer be exported." },
+  restricted: { level: "CET-6", pos: "adjective", collocation: "restricted access", example: "The new rule restricted access to the product." },
+  demand: { level: "CET-6", pos: "noun", collocation: "strong demand", example: "Demand for the chips grew quickly." },
+  valuable: { level: "CET-6", pos: "adjective", collocation: "valuable company", example: "The company became highly valuable." },
+  survive: { level: "CET-6", pos: "verb", collocation: "survive a crisis", example: "The company survived a serious crisis." },
+  exceeds: { level: "CET-6", pos: "verb", collocation: "exceed expectations", example: "The result exceeded expectations." }
+};
+
+const CET6_WORDS = new Set(Object.keys(CET6_DICTIONARY));
+
 const BASIC_TRANSLATIONS = {
   but: "但是", you: "你", the: "这个／该", it: "它", becomes: "变得", try: "尝试",
   useful: "有用的", for: "对于／为了", example: "例子", means: "意思是", become: "变得",
@@ -221,6 +288,8 @@ const elements = {
   translationText: document.querySelector("#translationText"),
   meaningText: document.querySelector("#meaningText"),
   patternText: document.querySelector("#patternText"),
+  dictionaryBlock: document.querySelector("#dictionaryBlock"),
+  dictionaryText: document.querySelector("#dictionaryText"),
   sourceText: document.querySelector("#sourceText"),
   replayButton: document.querySelector("#replayButton"),
   responseTime: document.querySelector("#responseTime"),
@@ -315,6 +384,7 @@ function renderCaption() {
   const words = cue.text.split(/\s+/);
   let index = 0;
   while (index < words.length) {
+    if (index > 0) elements.captionText.append(document.createTextNode(" "));
     const match = phraseAt(words, index);
     if (match) {
       const label = words.slice(index, index + match.length).join(" ");
@@ -325,7 +395,15 @@ function renderCaption() {
       const matchParts = raw.match(/^([^A-Za-z0-9']*)([A-Za-z0-9']+)([^A-Za-z0-9']*)$/);
       if (matchParts) {
         if (matchParts[1]) elements.captionText.append(document.createTextNode(matchParts[1]));
-        elements.captionText.append(makeToken(matchParts[2], "word", cleanToken(matchParts[2])));
+        const token = cleanToken(matchParts[2]);
+        if (CET6_WORDS.has(token)) {
+          elements.captionText.append(makeToken(matchParts[2], "cet6-word", token));
+        } else {
+          const plainWord = document.createElement("span");
+          plainWord.className = "caption-plain";
+          plainWord.textContent = matchParts[2];
+          elements.captionText.append(plainWord);
+        }
         if (matchParts[3]) {
           const punctuation = document.createElement("span");
           punctuation.className = "caption-punctuation";
@@ -333,7 +411,10 @@ function renderCaption() {
           elements.captionText.append(punctuation);
         }
       } else {
-        elements.captionText.append(document.createTextNode(raw));
+        const plainWord = document.createElement("span");
+        plainWord.className = "caption-plain";
+        plainWord.textContent = raw;
+        elements.captionText.append(plainWord);
       }
       index += 1;
     }
@@ -353,8 +434,15 @@ function contextualAnswer(selection, type, cue) {
       pattern: "The full-line view is useful when the grammar or relationship between phrases matters more than one word."
     };
   }
-  if (WORDS[selection]) {
-    return { zh: WORDS[selection][0], meaning: WORDS[selection][1], pattern: WORDS[selection][2] };
+  if (CET6_DICTIONARY[selection]) {
+    const entry = CET6_DICTIONARY[selection];
+    const legacy = WORDS[selection];
+    return {
+      zh: legacy?.[0] || `本句中的“${selection}”`,
+      meaning: legacy?.[1] || `Here “${selection}” is used as a ${entry.pos} in the video's explanation of Nvidia's business and technology story.`,
+      pattern: legacy?.[2] || `Useful collocation: ${entry.collocation}.`,
+      dictionary: `${entry.level} · ${entry.pos} · ${entry.collocation}\nExample: ${entry.example}`
+    };
   }
   return {
     zh: BASIC_TRANSLATIONS[selection] || `“${selection}”在本句中的含义`,
@@ -367,7 +455,11 @@ function openExplanation(selection, type, cue) {
   pauseActivePlayer();
   clearTimeout(state.explanationTimer);
   state.selectedCue = cue;
-  elements.selectionType.textContent = `${type === "sentence" ? "Full line" : type} · in this context`;
+  elements.selectionType.textContent = type === "sentence"
+    ? "Full line · in this context"
+    : type === "phrase"
+      ? "Contextual phrase · in this context"
+      : "CET-6 contextual dictionary · word";
   elements.selectionTitle.textContent = selection;
   elements.explanationLoading.hidden = false;
   elements.explanationContent.hidden = true;
@@ -381,6 +473,8 @@ function openExplanation(selection, type, cue) {
     elements.translationText.textContent = answer.zh;
     elements.meaningText.textContent = answer.meaning;
     elements.patternText.textContent = answer.pattern;
+    elements.dictionaryBlock.hidden = !answer.dictionary;
+    elements.dictionaryText.textContent = answer.dictionary || "";
     elements.sourceText.textContent = cue.text;
     elements.responseTime.textContent = `Context demo · ${((performance.now() - started) / 1000).toFixed(1)}s`;
     elements.explanationLoading.hidden = true;
